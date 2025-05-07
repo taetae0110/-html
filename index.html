@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리 학교 급식 정보</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>우리 학교 급식 정보</h1>
+    </header>
+    
+    <main>
+        <section class="search-section">
+            <h2>학교 검색</h2>
+            <div class="search-container">
+               <select id="eduOfficeCode">
+                    <option value="">-- 교육청 선택 --</option>
+                    <option value="B10">서울특별시교육청</option>
+                    <option value="C10">부산광역시교육청</option>
+                    <option value="D10">대구광역시교육청</option>
+                    <option value="E10">인천광역시교육청</option>
+                    <option value="F10">광주광역시교육청</option>
+                    <option value="G10">대전광역시교육청</option>
+                    <option value="H10">울산광역시교육청</option>
+                    <option value="I10">세종특별자치시교육청</option>
+                    <option value="J10">경기도교육청</option>
+                    <option value="K10">강원특별자치도교육청</option>
+                    <option value="M10">충청북도교육청</option>
+                    <option value="N10">충청남도교육청</option>
+                    <option value="P10">전라북도특별자치교육청</option>
+                    <option value="Q10">전라남도교육청</option>
+                    <option value="R10">경상북도교육청</option>
+                    <option value="S10">경상남도교육청</option>
+                    <option value="T10">제주특별자치도교육청</option>
+                </select>
+                <input type="text" id="schoolName" placeholder="학교명을 입력하세요">
+                <button id="searchButton">검색</button>
+            </div>
+            <div id="schoolSearchResults"></div>
+        </section>
+        
+        <section class="meal-section">
+            <h2>급식 정보</h2>
+            <div class="date-selector">
+                <button id="prevDay">이전</button>
+                <input type="date" id="mealDate">
+                <button id="nextDay">다음</button>
+            </div>
+            <div id="mealInfo" class="meal-container"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2025 크래프트 | NEIS Open API 활용</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
